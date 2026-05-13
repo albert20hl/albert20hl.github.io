@@ -1,5 +1,5 @@
 # 💫 About Me:
-![Alternative Text](images/IMG-20260509-WA0020.jpg)
+![Alternative Text](images/https://kommodo.ai/i/b76P7qPQjqG3fwVk2DnX)
 Hi everyone! My name is Albert Hugo Liberty, and I am a student at SMA Wardaya. I would describe myself as a<br>curious and hardworking person. I enjoy learning new things, especially in subjects like<br>Math and Physics, because they help me understand more about the world around me. Besides studying, I also <br>like spending my free time doing activites such as playing futsal, hanging out with friends, or watching my favorite<br>movies and shows.<br><br>As a student, I always try my best to balance school, hobbies, and personal life. Sometimes school can be <br>challenging, but I believe every challenge helps me grow and become a better person. I also enjoy meeting<br>new people, working in teams, and sharing ideas with others. Over the years, I have also received several <br>awards and achievements, such as a top 3 student for three consecutive years while also helping my team to <br>victory as champions in a futsal competition. which motivate me to keep improving and doing my best in <br>everything I do.<br><br>In the future, I hope to achieve my dreams, make my family proud, and become someone who can positively<br>impact other people.<br> 
 
 
