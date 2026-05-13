@@ -1,2 +1,14 @@
-# albert20hl.github.io
-Profil Pribadi
+# 💫 About Me:
+Hi everyone! My name is Albert Hugo Liberty, and I am a student at SMA Wardaya. I would describe myself as a<br>curious and hardworking person. I enjoy learning new things, especially in subjects like<br>Math and Physics, because they help me understand more about the world around me. Besides studying, I also <br>like spending my free time doing activites such as playing futsal, hanging out with friends, or watching my favorite<br>movies and shows.<br><br>As a student, I always try my best to balance school, hobbies, and personal life. Sometimes school can be <br>challenging, but I believe every challenge helps me grow and become a better person. I also enjoy meeting<br>new people, working in teams, and sharing ideas with others. Over the years, I have also received several <br>awards and achievements, such as a top 3 student for three consecutive years while also helping my team to <br>victory as champions in a futsal competition. which motivate me to keep improving and doing my best in <br>everything I do.<br><br>In the future, I hope to achieve my dreams, make my family proud, and become someone who can positively<br>impact other people.<br> 
+
+
+## 🌐 Socials:
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/@albert.lbrty) [![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@@al_bob25) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:Hokahematmantap@gmail.com) 
+
+# 💻 Tech Stack:
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
+
+---
+[![](https://komarev.com/ghpvc/?username=albert20hl&icon=6&color=4)](https://visitcount.itsvg.in)
+
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
