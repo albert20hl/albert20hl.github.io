@@ -4,8 +4,3 @@ Hi everyone! My name is Albert Hugo Liberty, and I am a student at SMA Wardaya. 
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/@albert.lbrty) [![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@@al_bob25) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:Hokahematmantap@gmail.com) 
-
----
-[![](https://komarev.com/ghpvc/?username=albert20hl&icon=6&color=4)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
