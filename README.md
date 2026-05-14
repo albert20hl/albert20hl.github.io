@@ -228,7 +228,7 @@
 
       <div class="hero-image">
         <div class="profile-card">
-          <img src="WhatsApp Image 2026-05-13 at 22.00.15.jpeg" alt="Foto Albert" class="profile-img">
+          <img src="Albert foto.jpeg" alt="Foto Albert" class="profile-img">
 
           <div class="profile-content">
             <h2>Albert Hugo Liberty</h2>
