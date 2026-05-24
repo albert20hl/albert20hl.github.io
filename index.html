@@ -198,6 +198,10 @@ body{
   line-height:1.8;
 }
 
+.experience{
+  position:relative;
+}
+
 .experience-item{
   position:relative;
   display:inline-block;
@@ -205,14 +209,14 @@ body{
   font-weight:600;
 }
 
-/* ✅ FIX KHUSUS OSIS & LEO CLUB */
-.experience .hover-popup{
+/* FIX POPUP KHUSUS EXPERIENCE */
+.experience-item .hover-popup{
   position:absolute;
   top:120%;
   left:0;
-  width:220px;
 
-  background:#fff;
+  width:220px;
+  background:white;
   border-radius:14px;
   overflow:hidden;
   box-shadow:0 10px 25px rgba(0,0,0,0.25);
@@ -221,10 +225,11 @@ body{
   visibility:hidden;
   transform:translateY(10px);
   transition:0.3s ease;
-  pointer-events:none;
-  z-index:999;
+
+  z-index:9999;
 }
 
+/* IMPORTANT: trigger hover */
 .experience-item:hover .hover-popup{
   opacity:1;
   visibility:visible;
