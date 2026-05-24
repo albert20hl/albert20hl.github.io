@@ -10,279 +10,278 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-  *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-  }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-  .top-section{
+body{
+  font-family:'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e9e3d5, #cfd8c3, #d8c3a5);
+  color:#2f2a24;
+  padding:40px 20px;
+  font-size:18px;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+
+.card{
+  background: rgba(255,255,255,0.35);
+  border-radius:28px;
+  padding:40px;
+  box-shadow:0 10px 30px rgba(60,50,40,0.15);
+  border:1px solid rgba(255,255,255,0.4);
+  backdrop-filter: blur(14px);
+}
+
+/* TOP SECTION */
+.top-section{
   display:flex;
   gap:40px;
   align-items:center;
   margin-bottom:30px;
 }
 
-@media (max-width:768px){
+.image-box{
+  width:240px;
+  height:240px;
+  border-radius:24px;
+  overflow:hidden;
+  border:2px solid rgba(255,255,255,0.4);
+}
+
+.image-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.profile h1{
+  font-size:40px;
+  margin-bottom:8px;
+}
+
+.subtitle{
+  color:#4a3f35;
+  margin-bottom:20px;
+}
+
+/* INFO GRID */
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:15px;
+}
+
+.info-item{
+  background: rgba(255,255,255,0.25);
+  padding:14px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+}
+
+.info-item span{
+  display:block;
+  font-size:13px;
+  color:#6b5e4b;
+}
+
+.info-item p{
+  margin-top:5px;
+  font-weight:500;
+}
+
+/* SECTION */
+.section-title{
+  margin-top:40px;
+  margin-bottom:15px;
+  font-size:22px;
+}
+
+/* ABOUT */
+.about{
+  background: rgba(255,255,255,0.25);
+  padding:20px;
+  border-radius:18px;
+  line-height:1.7;
+  border:1px solid rgba(255,255,255,0.4);
+}
+
+/* INTEREST */
+.interest-container{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.interest{
+  background: rgba(107,127,91,0.85);
+  color:white;
+  padding:10px 14px;
+  border-radius:12px;
+  font-size:13px;
+}
+
+/* BOX */
+.box-container{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.box{
+  flex:1;
+  min-width:260px;
+  background: rgba(255,255,255,0.25);
+  padding:20px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.4);
+}
+
+/* SKILLS */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:10px;
+}
+
+.skill{
+  background: rgba(255,255,255,0.5);
+  padding:8px 12px;
+  border-radius:10px;
+  font-size:13px;
+}
+
+/* QUOTE */
+.quote{
+  margin-top:30px;
+  background:#3f4f3a;
+  color:white;
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  font-style:italic;
+}
+
+/* FOOTER */
+.footer{
+  margin-top:25px;
+  text-align:center;
+  font-size:13px;
+  color:#5c5146;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
   .top-section{
     flex-direction:column;
     text-align:center;
   }
 }
-
-  body{
-    font-family:'Poppins', sans-serif;
-    background: linear-gradient(135deg, #e9e3d5, #cfd8c3, #d8c3a5);
-    color:#2f2a24;
-    padding:40px 20px;
-    font-size: 18px; 
-  }
-
-  .container{
-    max-width:1100px;
-    margin:auto;
-  }
-
-  .card{
-    background: rgba(255, 255, 255, 0.35);
-    border-radius:28px;
-    padding:40px;
-    box-shadow:0 10px 30px rgba(60,50,40,0.15);
-    border:1px solid rgba(255,255,255,0.4);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-  }
-
-  .image-box{
-    width:240px;
-    height:240px;
-    border-radius:24px;
-    border:2px solid rgba(255,255,255,0.4);
-    background: rgba(255,255,255,0.25);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-  }
-
-  .image-box img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-  }
-
-  .profile h1{
-    font-size:42px;
-    margin-bottom:10px;
-    color:#2f2a24;
-  }
-
-  .subtitle{
-    color:#4a3f35;
-    margin-bottom:25px;
-  }
-
-  .info-item{
-    background: rgba(255,255,255,0.25);
-    border:1px solid rgba(255,255,255,0.4);
-    padding:16px;
-    border-radius:16px;
-    backdrop-filter: blur(10px);
-  }
-
-  .info-item span{
-    color:#6b5e4b;
-  }
-
-  .section-title{
-    margin-top:45px;
-    margin-bottom:18px;
-    font-size:24px;
-    font-weight:600;
-    color:#2f2a24;
-  }
-
-  .about{
-    background: rgba(255,255,255,0.25);
-    padding:25px;
-    border-radius:20px;
-    line-height:1.8;
-    border:1px solid rgba(255,255,255,0.4);
-    backdrop-filter: blur(10px);
-  }
-
-  .interest{
-    background: rgba(107,127,91,0.85);
-    color:white;
-    padding:12px 18px;
-    border-radius:14px;
-    font-size:14px;
-    backdrop-filter: blur(10px);
-  }
-
-  .box{
-    background: rgba(255,255,255,0.25);
-    padding:28px;
-    border-radius:22px;
-    border:1px solid rgba(255,255,255,0.4);
-    backdrop-filter: blur(12px);
-    transition:0.3s;
-  }
-
-  .box:hover{
-    transform:translateY(-6px);
-  }
-
-  .skills .skill{
-    background: rgba(255,255,255,0.5);
-    border:1px solid rgba(255,255,255,0.6);
-    padding:10px 14px;
-    border-radius:12px;
-    font-size:14px;
-  }
-
-  .quote{
-    margin-top:40px;
-    background: rgba(63,79,58,0.85);
-    color:#f5f1e8;
-    padding:30px;
-    border-radius:24px;
-    text-align:center;
-    line-height:1.8;
-    font-size:18px;
-    font-style:italic;
-    backdrop-filter: blur(12px);
-  }
-
-  .footer{
-    margin-top:35px;
-    text-align:center;
-    color:#5c5146;
-    font-size:14px;
-  }
- </style>
+</style>
 </head>
+
 <body>
 
-  <div class="container">
-    <div class="card">
+<div class="container">
+  <div class="card">
 
-      <!-- TOP -->
-      <div class="top-section">
+    <!-- TOP -->
+    <div class="top-section">
 
-        <!-- FOTO -->
-        <div class="image-box">
-            <img src="Albert foto.jpeg" alt="Albert">
-        
-        </div>
-
-        <!-- PROFILE -->
-        <div class="profile">
-          <h1>Albert Hugo Liberty</h1>
-
-          <p class="subtitle">
-            Siswa SMA • Pecinta Matematika & Fisika • Future Aerospace Engineer 🚀
-          </p>
-
-          <div class="info-grid">
-
-            <div class="info-item">
-              <span>Tanggal Lahir</span>
-              20 Februari 2010
-            </div>
-
-            <div class="info-item">
-              <span>Asal</span>
-              Jakarta
-            </div>
-
-            <div class="info-item">
-              <span>Sekolah</span>
-              SMA Wardaya
-            </div>
-
-            <div class="info-item">
-              <span>Instagram</span>
-              @albert.lbrty
-            </div>
-
-          </div>
-        </div>
+      <div class="image-box">
+        <img src="Albert foto.jpeg" alt="Albert">
       </div>
 
-      <!-- ABOUT -->
-      <h2 class="section-title">Tentang Saya</h2>
-
-      <div class="about">
-        <p>
-        Halo! Saya Albert Hugo Liberty, seorang siswa dari SMA Wardaya yang berasal dari Jakarta.
-        Saya memiliki minat besar di bidang matematika, fisika, dan teknologi. Selain belajar,
-        saya juga senang bermain futsal dan mengikuti berbagai kompetisi akademik maupun olahraga.
+      <div class="profile">
+        <h1>Albert Hugo Liberty</h1>
+        <p class="subtitle">
+          Siswa SMA • Pecinta Matematika & Fisika • Future Aerospace Engineer 🚀
         </p>
-        <p>
-        Matematika adalah pelajaran favorit saya karena sangat mengasah logika dan dapat melihat 
-        penerapannya secara langsung. Seperti materi kombinatorika dan geometri. Saya juga sering 
-        menonton pembahasan-pembahasan soal yang sulit karena membuat saya menjadi terpacu untuk berkembang.
-        </p>
-        
-      </div>
 
-      <!-- INTEREST -->
-      <h2 class="section-title">Minat</h2>
+        <div class="info-grid">
 
-      <div class="interest-container">
-        <div class="interest">📚 Matematika</div>
-        <div class="interest">⚛️ Fisika</div>
-        <div class="interest">🎨 Menggambar</div>
-        <div class="interest">⚽ Futsal</div>
-      </div>
-
-      <!-- BOX -->
-      <div class="box-container">
-
-        <!-- ACHIEVEMENT -->
-        <div class="box">
-          <h3>🏆 Achievement</h3>
-
-          <p>
-            Saya pernah meraih juara dalam lomba matematika tingkat sekolah berkat kemampuan
-            analisis dan problem solving yang saya miliki. Selain itu, saya juga aktif dalam
-            bidang olahraga, khususnya futsal, dan pernah membantu tim sekolah memenangkan
-            turnamen antarsekolah melalui kerja sama tim, disiplin, dan konsistensi latihan.
-          </p>
-        </div>
-
-        <!-- SKILLS -->
-        <div class="box">
-          <h3>✨ Skills</h3>
-
-          <div class="skills">
-            <div class="skill">Problem Solving</div>
-            <div class="skill">Critical Thinking</div>
-            <div class="skill">Fast Learner</div>
-            <div class="skill">Leadership</div>
-            <div class="skill">Teamwork</div>
-            <div class="skill">Public Speaking</div>
+          <div class="info-item">
+            <span>Tanggal Lahir</span>
+            <p>20 Februari 2010</p>
           </div>
+
+          <div class="info-item">
+            <span>Asal</span>
+            <p>Jakarta</p>
+          </div>
+
+          <div class="info-item">
+            <span>Sekolah</span>
+            <p>SMA Wardaya</p>
+          </div>
+
+          <div class="info-item">
+            <span>Instagram</span>
+            <p>@albert.lbrty</p>
+          </div>
+
         </div>
-
-      </div>
-
-      <!-- QUOTE -->
-      <div class="quote">
-      <p>Saya mengambil quotes yang sangat bermakna dari musisi favorit saya Avicii yaitu:</p>
-      <p>"One day you'll leave this world behind. So live a life you will remember"</p>
-      </div>
-
-      <!-- FOOTER -->
-      <div class="footer">
-        © 2026 Albert Hugo Liberty
       </div>
 
     </div>
+
+    <!-- ABOUT -->
+    <h2 class="section-title">Tentang Saya</h2>
+    <div class="about">
+      Halo! Saya Albert Hugo Liberty, siswa SMA Wardaya dari Jakarta.
+      Saya memiliki minat besar di matematika, fisika, dan teknologi.
+      Saya juga suka futsal dan mengikuti kompetisi akademik.
+    </div>
+
+    <!-- INTEREST -->
+    <h2 class="section-title">Minat</h2>
+    <div class="interest-container">
+      <div class="interest">📚 Matematika</div>
+      <div class="interest">⚛️ Fisika</div>
+      <div class="interest">🎨 Menggambar</div>
+      <div class="interest">⚽ Futsal</div>
+    </div>
+
+    <!-- BOX -->
+    <div class="box-container">
+
+      <div class="box">
+        <h3>🏆 Achievement</h3>
+        <p>Lomba matematika tingkat sekolah dan turnamen futsal antar sekolah.</p>
+      </div>
+
+      <div class="box">
+        <h3>✨ Skills</h3>
+        <div class="skills">
+          <div class="skill">Problem Solving</div>
+          <div class="skill">Critical Thinking</div>
+          <div class="skill">Leadership</div>
+          <div class="skill">Teamwork</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- QUOTE -->
+    <div class="quote">
+      "One day you'll leave this world behind. So live a life you will remember"
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      © 2026 Albert Hugo Liberty
+    </div>
+
   </div>
+</div>
 
 </body>
 </html>
