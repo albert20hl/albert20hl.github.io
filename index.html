@@ -170,17 +170,17 @@ body{
 
 .experience-item{
   position:relative;
-  display:inline;
-  cursor:pointer;
+  display:inline-block;
   font-weight:600;
+  cursor:pointer;
 }
 
-/* FIX EXPERIENCE POPUP */
+/* FIX POPUP EXPERIENCE (PENTING) */
 .experience-item .hover-popup{
   position:absolute;
-  top:120%;
+  top:25px;
   left:0;
-  width:220px;
+  width:200px;
 
   background:white;
   border-radius:14px;
@@ -189,16 +189,16 @@ body{
 
   opacity:0;
   visibility:hidden;
-  transform:translateY(10px);
-  transition:0.25s ease;
+  transform:scale(0.95);
+  transition:0.2s ease;
   pointer-events:none;
-  z-index:9999;
+  z-index:99999;
 }
 
 .experience-item:hover .hover-popup{
   opacity:1;
   visibility:visible;
-  transform:translateY(0);
+  transform:scale(1);
 }
 
 /* BOX */
@@ -315,7 +315,7 @@ body{
 
       <div class="interest">
         ⚽ Futsal
-        <div class="hover-popup"><img src="futsal .jpeg"></div>
+        <div class="hover-popup"><img src="futsal.jpeg"></div>
       </div>
 
       <div class="interest">
@@ -331,23 +331,25 @@ body{
     <div class="experience">
 
       <p>
-        Saya pernah aktif dalam organisasi sekolah yaitu 
+        Saya pernah aktif dalam organisasi sekolah yaitu  
         <span class="experience-item">
           OSIS
-          <div class="hover-popup"><img src="osis.jpeg">
-        </span> , di mana saya belajar banyak hal tentang kepemimpinan, tanggung jawab, dan kerja sama tim. Dalam OSIS, saya terlibat dalam berbagai kegiatan sekolah seperti perencanaan acara, membantu koordinasi kegiatan siswa, serta memastikan setiap program berjalan dengan lancar. Pengalaman ini membuat saya lebih disiplin, lebih mampu mengatur waktu, dan belajar bagaimana bekerja di bawah tekanan namun tetap menjaga kualitas hasil kerja.
-    </div>
+          <div class="hover-popup">
+            <img src="osis.jpeg">
+          </div>
+        </span>, di mana saya belajar banyak hal tentang kepemimpinan, tanggung jawab, dan kerja sama tim. Dalam OSIS, saya terlibat dalam berbagai kegiatan sekolah seperti perencanaan acara, membantu koordinasi kegiatan siswa, serta memastikan setiap program berjalan dengan lancar. Pengalaman ini membuat saya lebih disiplin, lebih mampu mengatur waktu, dan belajar bagaimana bekerja di bawah tekanan namun tetap menjaga kualitas hasil kerja.
       </p>
 
       <br>
 
       <p>
-        Selain itu, saya juga pernah bergabung dengan 
+        Selain itu, saya juga pernah bergabung dengan  
         <span class="experience-item">
           Leo Club
-          <div class="hover-popup"><img src="leo.jpeg"></div>
-        </span>
-        , sebuah organisasi sosial yang berfokus pada kegiatan kemanusiaan dan membantu masyarakat. Di Leo Club, saya ikut serta dalam berbagai kegiatan seperti penggalangan dana, kunjungan sosial, serta membantu orang-orang yang membutuhkan di sekitar lingkungan. Pengalaman ini membuka wawasan saya bahwa sekecil apa pun bantuan yang kita berikan dapat memberikan dampak besar bagi orang lain.
+          <div class="hover-popup">
+            <img src="leo.jpeg">
+          </div>
+        </span>, sebuah organisasi sosial yang berfokus pada kegiatan kemanusiaan dan membantu masyarakat. Di Leo Club, saya ikut serta dalam berbagai kegiatan seperti penggalangan dana, kunjungan sosial, serta membantu orang-orang yang membutuhkan di sekitar lingkungan. Pengalaman ini membuka wawasan saya bahwa sekecil apa pun bantuan yang kita berikan dapat memberikan dampak besar bagi orang lain.
       </p>
 
       <br>
