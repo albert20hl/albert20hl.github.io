@@ -16,6 +16,20 @@
     box-sizing:border-box;
   }
 
+  .top-section{
+  display:flex;
+  gap:40px;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+@media (max-width:768px){
+  .top-section{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+
   body{
     font-family:'Poppins', sans-serif;
     background: linear-gradient(135deg, #e9e3d5, #cfd8c3, #d8c3a5);
