@@ -217,17 +217,8 @@
 
         <!-- FOTO -->
         <div class="image-box">
-
-          Upload Foto
-
-          <!-- 
-          Untuk memasukkan foto:
-          Ganti tulisan "Upload Foto" menjadi:
-
-          <img src="foto.jpg" alt="Albert">
-
-          -->
-
+            <img src="Albert foto.jpeg" alt="Albert">
+        
         </div>
 
         <!-- PROFILE -->
