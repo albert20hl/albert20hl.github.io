@@ -117,7 +117,6 @@ body{
   gap:10px;
 }
 
-/* INTEREST ITEM */
 .interest{
   position:relative;
   background: rgba(107,127,91,0.85);
@@ -128,7 +127,7 @@ body{
   cursor:pointer;
 }
 
-/* POPUP */
+/* POPUP GENERAL */
 .hover-popup{
   position:absolute;
   top:120%;
@@ -137,11 +136,13 @@ body{
   border-radius:14px;
   overflow:hidden;
   box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
   opacity:0;
+  visibility:hidden;
   transform:translateY(10px);
   transition:0.3s ease;
   pointer-events:none;
-  z-index:10;
+  z-index:999;
 }
 
 .hover-popup img{
@@ -149,10 +150,10 @@ body{
   display:block;
 }
 
-/* SHOW POPUP */
-.interest:hover .hover-popup,
-.experience-item:hover .hover-popup{
+/* MINAT HOVER */
+.interest:hover .hover-popup{
   opacity:1;
+  visibility:visible;
   transform:translateY(0);
 }
 
@@ -197,13 +198,37 @@ body{
   line-height:1.8;
 }
 
-/* EXPERIENCE ITEMS (INTERACTIVE) */
 .experience-item{
   position:relative;
-  font-weight:600;
   display:inline-block;
   cursor:pointer;
-  color:#2f2a24;
+  font-weight:600;
+}
+
+/* ✅ FIX KHUSUS OSIS & LEO CLUB */
+.experience .hover-popup{
+  position:absolute;
+  top:120%;
+  left:0;
+  width:220px;
+
+  background:#fff;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px);
+  transition:0.3s ease;
+  pointer-events:none;
+  z-index:999;
+}
+
+.experience-item:hover .hover-popup{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
 }
 
 /* QUOTE */
