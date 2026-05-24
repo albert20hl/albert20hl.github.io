@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Albert Hugo Liberty | Biodata</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Albert Hugo Liberty | Biodata</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -110,7 +110,7 @@ body{
   border:1px solid rgba(255,255,255,0.4);
 }
 
-/* INTEREST */
+/* MINAT */
 .interest-container{
   display:flex;
   flex-wrap:wrap;
@@ -127,12 +127,14 @@ body{
   cursor:pointer;
 }
 
-/* POPUP GENERAL */
+/* POPUP GLOBAL */
 .hover-popup{
   position:absolute;
   top:120%;
   left:0;
   width:220px;
+
+  background:white;
   border-radius:14px;
   overflow:hidden;
   box-shadow:0 10px 25px rgba(0,0,0,0.25);
@@ -140,9 +142,9 @@ body{
   opacity:0;
   visibility:hidden;
   transform:translateY(10px);
-  transition:0.3s ease;
+  transition:0.25s ease;
   pointer-events:none;
-  z-index:999;
+  z-index:9999;
 }
 
 .hover-popup img{
@@ -152,6 +154,48 @@ body{
 
 /* MINAT HOVER */
 .interest:hover .hover-popup{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+/* EXPERIENCE */
+.experience{
+  background: rgba(255,255,255,0.25);
+  padding:20px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.4);
+  line-height:1.8;
+}
+
+.experience-item{
+  position:relative;
+  display:inline;
+  cursor:pointer;
+  font-weight:600;
+}
+
+/* FIX EXPERIENCE POPUP */
+.experience-item .hover-popup{
+  position:absolute;
+  top:120%;
+  left:0;
+  width:220px;
+
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px);
+  transition:0.25s ease;
+  pointer-events:none;
+  z-index:9999;
+}
+
+.experience-item:hover .hover-popup{
   opacity:1;
   visibility:visible;
   transform:translateY(0);
@@ -187,53 +231,6 @@ body{
   padding:8px 12px;
   border-radius:10px;
   font-size:13px;
-}
-
-/* EXPERIENCE */
-.experience{
-  background: rgba(255,255,255,0.25);
-  padding:20px;
-  border-radius:18px;
-  border:1px solid rgba(255,255,255,0.4);
-  line-height:1.8;
-}
-
-.experience{
-  position:relative;
-}
-
-.experience-item{
-  position:relative;
-  display:inline-block;
-  cursor:pointer;
-  font-weight:600;
-}
-
-/* FIX POPUP KHUSUS EXPERIENCE */
-.experience-item .hover-popup{
-  position:absolute;
-  top:120%;
-  left:0;
-
-  width:220px;
-  background:white;
-  border-radius:14px;
-  overflow:hidden;
-  box-shadow:0 10px 25px rgba(0,0,0,0.25);
-
-  opacity:0;
-  visibility:hidden;
-  transform:translateY(10px);
-  transition:0.3s ease;
-
-  z-index:9999;
-}
-
-/* IMPORTANT: trigger hover */
-.experience-item:hover .hover-popup{
-  opacity:1;
-  visibility:visible;
-  transform:translateY(0);
 }
 
 /* QUOTE */
@@ -283,27 +280,10 @@ body{
         </p>
 
         <div class="info-grid">
-
-          <div class="info-item">
-            <span>Tanggal Lahir</span>
-            <p>20 Februari 2010</p>
-          </div>
-
-          <div class="info-item">
-            <span>Asal</span>
-            <p>Jakarta</p>
-          </div>
-
-          <div class="info-item">
-            <span>Sekolah</span>
-            <p>SMA Wardaya</p>
-          </div>
-
-          <div class="info-item">
-            <span>Instagram</span>
-            <p>@albert.lbrty</p>
-          </div>
-
+          <div class="info-item"><span>Tanggal Lahir</span><p>20 Februari 2010</p></div>
+          <div class="info-item"><span>Asal</span><p>Jakarta</p></div>
+          <div class="info-item"><span>Sekolah</span><p>SMA Wardaya</p></div>
+          <div class="info-item"><span>Instagram</span><p>@albert.lbrty</p></div>
         </div>
       </div>
 
@@ -330,23 +310,17 @@ body{
 
       <div class="interest">
         📚 Matematika
-        <div class="hover-popup">
-          <img src="icas.jpeg" alt="Matematika">
-        </div>
+        <div class="hover-popup"><img src="icas.jpeg"></div>
       </div>
 
       <div class="interest">
         ⚽ Futsal
-        <div class="hover-popup">
-          <img src="futsal .jpeg" alt="Futsal">
-        </div>
+        <div class="hover-popup"><img src="futsal.jpeg"></div>
       </div>
 
       <div class="interest">
         🎨 Menggambar
-        <div class="hover-popup">
-          <img src="gambar.jpeg" alt="Menggambar">
-        </div>
+        <div class="hover-popup"><img src="gambar.jpeg"></div>
       </div>
 
     </div>
@@ -360,16 +334,9 @@ body{
         Saya pernah aktif dalam organisasi sekolah yaitu 
         <span class="experience-item">
           OSIS
-          <div class="hover-popup">
-            <img src="osis.jpeg" alt="OSIS">
-          </div>
+          <div class="hover-popup"><img src="osis.jpeg"></div>
         </span>
-        , di mana saya belajar banyak hal
-        tentang kepemimpinan, tanggung jawab, dan kerja sama tim. Dalam OSIS, saya terlibat dalam
-        berbagai kegiatan sekolah seperti perencanaan acara, membantu koordinasi kegiatan siswa,
-        serta memastikan setiap program berjalan dengan lancar. Pengalaman ini membuat saya lebih
-        disiplin, lebih mampu mengatur waktu, dan belajar bagaimana bekerja di bawah tekanan namun
-        tetap menjaga kualitas hasil kerja.
+        , di mana saya belajar banyak hal tentang kepemimpinan, tanggung jawab, dan kerja sama tim. Dalam OSIS, saya terlibat dalam berbagai kegiatan sekolah seperti perencanaan acara, membantu koordinasi kegiatan siswa, serta memastikan setiap program berjalan dengan lancar. Pengalaman ini membuat saya lebih disiplin, lebih mampu mengatur waktu, dan belajar bagaimana bekerja di bawah tekanan namun tetap menjaga kualitas hasil kerja.
       </p>
 
       <br>
@@ -378,23 +345,15 @@ body{
         Selain itu, saya juga pernah bergabung dengan 
         <span class="experience-item">
           Leo Club
-          <div class="hover-popup">
-            <img src="leo.jpeg" alt="Leo Club">
-          </div>
+          <div class="hover-popup"><img src="leo.jpeg"></div>
         </span>
-        , sebuah organisasi sosial yang
-        berfokus pada kegiatan kemanusiaan dan membantu masyarakat. Di Leo Club, saya ikut serta
-        dalam berbagai kegiatan seperti penggalangan dana, kunjungan sosial, serta membantu orang-orang
-        yang membutuhkan di sekitar lingkungan. Pengalaman ini membuka wawasan saya bahwa sekecil apa
-        pun bantuan yang kita berikan dapat memberikan dampak besar bagi orang lain.
+        , sebuah organisasi sosial yang berfokus pada kegiatan kemanusiaan dan membantu masyarakat. Di Leo Club, saya ikut serta dalam berbagai kegiatan seperti penggalangan dana, kunjungan sosial, serta membantu orang-orang yang membutuhkan di sekitar lingkungan. Pengalaman ini membuka wawasan saya bahwa sekecil apa pun bantuan yang kita berikan dapat memberikan dampak besar bagi orang lain.
       </p>
 
       <br>
 
       <p>
-        Melalui kedua organisasi ini, saya belajar bahwa menjadi bagian dari komunitas bukan hanya
-        tentang aktif berpartisipasi, tetapi juga tentang memberi kontribusi nyata, memahami orang lain,
-        dan membangun empati serta kepedulian sosial.
+        Melalui kedua organisasi ini, saya belajar bahwa menjadi bagian dari komunitas bukan hanya tentang aktif berpartisipasi, tetapi juga tentang memberi kontribusi nyata, memahami orang lain, dan membangun empati serta kepedulian sosial.
       </p>
 
     </div>
@@ -405,10 +364,7 @@ body{
       <div class="box">
         <h3>🏆 Achievement</h3>
         <p>
-          Saya pernah meraih juara dalam lomba matematika tingkat sekolah berkat kemampuan
-          analisis dan problem solving yang saya miliki. Selain itu, saya juga aktif dalam
-          bidang olahraga, khususnya futsal, dan pernah membantu tim sekolah memenangkan
-          turnamen antarsekolah melalui kerja sama tim, disiplin, dan konsistensi latihan.
+          Saya pernah meraih juara dalam lomba matematika tingkat sekolah berkat kemampuan analisis dan problem solving yang saya miliki. Selain itu, saya juga aktif dalam bidang olahraga, khususnya futsal, dan pernah membantu tim sekolah memenangkan turnamen antarsekolah melalui kerja sama tim, disiplin, dan konsistensi latihan.
         </p>
       </div>
 
