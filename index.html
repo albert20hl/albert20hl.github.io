@@ -117,12 +117,43 @@ body{
   gap:10px;
 }
 
+/* INTEREST ITEM */
 .interest{
+  position:relative;
   background: rgba(107,127,91,0.85);
   color:white;
   padding:10px 14px;
   border-radius:12px;
   font-size:13px;
+  cursor:pointer;
+}
+
+/* POPUP */
+.hover-popup{
+  position:absolute;
+  top:120%;
+  left:0;
+  width:220px;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  opacity:0;
+  transform:translateY(10px);
+  transition:0.3s ease;
+  pointer-events:none;
+  z-index:10;
+}
+
+.hover-popup img{
+  width:100%;
+  display:block;
+}
+
+/* SHOW POPUP */
+.interest:hover .hover-popup,
+.experience-item:hover .hover-popup{
+  opacity:1;
+  transform:translateY(0);
 }
 
 /* BOX */
@@ -164,6 +195,15 @@ body{
   border-radius:18px;
   border:1px solid rgba(255,255,255,0.4);
   line-height:1.8;
+}
+
+/* EXPERIENCE ITEMS (INTERACTIVE) */
+.experience-item{
+  position:relative;
+  font-weight:600;
+  display:inline-block;
+  cursor:pointer;
+  color:#2f2a24;
 }
 
 /* QUOTE */
@@ -239,7 +279,7 @@ body{
 
     </div>
 
-    <!-- ABOUT (TIDAK DIUBAH) -->
+    <!-- ABOUT -->
     <h2 class="section-title">Tentang Saya</h2>
     <div class="about">
       Halo! Saya Albert Hugo Liberty, seorang siswa dari SMA Wardaya yang berasal dari Jakarta.
@@ -248,26 +288,52 @@ body{
 
       <br><br>
 
-      Matematika adalah pelajaran favorit saya karena sangat mengasah logika dan dapat melihat
-      penerapannya secara langsung. Seperti materi kombinatorika dan geometri. Saya juga sering
+      Matematika adalah pelajaran favorit saya karena sangat mengasah logika dan dapat melihat  
+      penerapannya secara langsung. Seperti materi kombinatorika dan geometri. Saya juga sering  
       menonton pembahasan-pembahasan soal yang sulit karena membuat saya menjadi terpacu untuk berkembang.
     </div>
 
     <!-- MINAT -->
     <h2 class="section-title">Minat</h2>
+
     <div class="interest-container">
-      <div class="interest">📚 Matematika</div>
-      <div class="interest">⚛️ Fisika</div>
-      <div class="interest">🎨 Menggambar</div>
-      <div class="interest">⚽ Futsal</div>
+
+      <div class="interest">
+        📚 Matematika
+        <div class="hover-popup">
+          <img src="matematika.jpg" alt="Matematika">
+        </div>
+      </div>
+
+      <div class="interest">
+        ⚽ Futsal
+        <div class="hover-popup">
+          <img src="futsal.jpg" alt="Futsal">
+        </div>
+      </div>
+
+      <div class="interest">
+        🎨 Menggambar
+        <div class="hover-popup">
+          <img src="menggambar.jpg" alt="Menggambar">
+        </div>
+      </div>
+
     </div>
 
-    <!-- EXPERIENCE (BARU - OSIS & LEO CLUB) -->
+    <!-- EXPERIENCE -->
     <h2 class="section-title">Pengalaman Organisasi</h2>
+
     <div class="experience">
 
       <p>
-        Saya pernah aktif dalam organisasi sekolah yaitu <b>OSIS</b>, di mana saya belajar banyak hal
+        Saya pernah aktif dalam organisasi sekolah yaitu 
+        <span class="experience-item">
+          OSIS
+          <div class="hover-popup">
+            <img src="osis.jpg" alt="OSIS">
+          </div>
+        </span>, di mana saya belajar banyak hal
         tentang kepemimpinan, tanggung jawab, dan kerja sama tim. Dalam OSIS, saya terlibat dalam
         berbagai kegiatan sekolah seperti perencanaan acara, membantu koordinasi kegiatan siswa,
         serta memastikan setiap program berjalan dengan lancar. Pengalaman ini membuat saya lebih
@@ -278,7 +344,13 @@ body{
       <br>
 
       <p>
-        Selain itu, saya juga pernah bergabung dengan <b>Leo Club</b>, sebuah organisasi sosial yang
+        Selain itu, saya juga pernah bergabung dengan 
+        <span class="experience-item">
+          Leo Club
+          <div class="hover-popup">
+            <img src="leo.jpg" alt="Leo Club">
+          </div>
+        </span>, sebuah organisasi sosial yang
         berfokus pada kegiatan kemanusiaan dan membantu masyarakat. Di Leo Club, saya ikut serta
         dalam berbagai kegiatan seperti penggalangan dana, kunjungan sosial, serta membantu orang-orang
         yang membutuhkan di sekitar lingkungan. Pengalaman ini membuka wawasan saya bahwa sekecil apa
@@ -298,7 +370,6 @@ body{
     <!-- BOX -->
     <div class="box-container">
 
-      <!-- ACHIEVEMENT (TIDAK DIUBAH) -->
       <div class="box">
         <h3>🏆 Achievement</h3>
         <p>
@@ -309,7 +380,6 @@ body{
         </p>
       </div>
 
-      <!-- SKILLS (TIDAK DIUBAH) -->
       <div class="box">
         <h3>✨ Skills</h3>
         <div class="skills">
