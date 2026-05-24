@@ -18,8 +18,8 @@
 
     body{
       font-family:'Poppins', sans-serif;
-      background:#f4f6f9;
-      color:#1f2937;
+      background:#f3f4f6;
+      color:#111827;
       padding:40px 20px;
     }
 
@@ -28,32 +28,32 @@
       margin:auto;
     }
 
-    .profile-card{
+    .card{
       background:white;
-      border-radius:24px;
+      border-radius:28px;
       padding:40px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+      box-shadow:0 10px 30px rgba(0,0,0,0.05);
     }
 
     .top-section{
       display:flex;
-      gap:40px;
       align-items:center;
+      gap:40px;
       flex-wrap:wrap;
     }
 
     .image-box{
-      width:230px;
-      height:230px;
-      border:2px dashed #cbd5e1;
+      width:240px;
+      height:240px;
       border-radius:24px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#94a3b8;
-      font-size:15px;
+      border:2px dashed #cbd5e1;
       background:#f8fafc;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:#94a3b8;
       overflow:hidden;
+      font-size:15px;
     }
 
     .image-box img{
@@ -62,47 +62,53 @@
       object-fit:cover;
     }
 
-    .profile-info{
+    .profile{
       flex:1;
     }
 
-    .profile-info h1{
+    .profile h1{
       font-size:42px;
-      font-weight:700;
       margin-bottom:10px;
     }
 
     .subtitle{
-      color:#64748b;
+      color:#6b7280;
+      margin-bottom:25px;
       font-size:16px;
-      margin-bottom:20px;
     }
 
-    .info-list{
+    .info-grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
       gap:15px;
-      margin-top:20px;
     }
 
     .info-item{
-      background:#f8fafc;
+      background:#f9fafb;
       padding:16px;
       border-radius:16px;
     }
 
     .info-item span{
       display:block;
+      color:#6b7280;
       font-size:13px;
-      color:#64748b;
-      margin-bottom:4px;
+      margin-bottom:5px;
     }
 
     .section-title{
       margin-top:45px;
-      margin-bottom:20px;
+      margin-bottom:18px;
       font-size:24px;
       font-weight:600;
+    }
+
+    .about{
+      background:#f9fafb;
+      padding:25px;
+      border-radius:20px;
+      line-height:1.8;
+      color:#374151;
     }
 
     .interest-container{
@@ -114,22 +120,22 @@
     .interest{
       background:#111827;
       color:white;
-      padding:12px 20px;
+      padding:12px 18px;
       border-radius:14px;
       font-size:14px;
     }
 
     .box-container{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
       gap:20px;
       margin-top:20px;
     }
 
     .box{
-      background:#f8fafc;
-      padding:24px;
-      border-radius:20px;
+      background:#f9fafb;
+      padding:28px;
+      border-radius:22px;
       transition:0.3s;
     }
 
@@ -142,82 +148,98 @@
       font-size:20px;
     }
 
-    .skills-list{
+    .box p{
+      line-height:1.8;
+      color:#374151;
+    }
+
+    .skills{
       display:flex;
       flex-wrap:wrap;
-      gap:10px;
+      gap:12px;
+      margin-top:10px;
     }
 
     .skill{
       background:white;
-      border:1px solid #e2e8f0;
+      border:1px solid #e5e7eb;
       padding:10px 14px;
       border-radius:12px;
       font-size:14px;
     }
 
     .quote{
-      margin-top:35px;
+      margin-top:40px;
       background:#111827;
       color:white;
       padding:30px;
       border-radius:24px;
       text-align:center;
+      line-height:1.8;
       font-size:18px;
       font-style:italic;
-      line-height:1.7;
     }
 
     .footer{
-      margin-top:30px;
+      margin-top:35px;
       text-align:center;
-      color:#64748b;
+      color:#9ca3af;
       font-size:14px;
     }
 
     @media(max-width:768px){
-      .profile-info h1{
-        font-size:32px;
-      }
 
       .top-section{
         justify-content:center;
         text-align:center;
       }
 
-      .image-box{
-        width:200px;
-        height:200px;
+      .profile h1{
+        font-size:34px;
       }
+
+      .image-box{
+        width:210px;
+        height:210px;
+      }
+
     }
+
   </style>
 </head>
 <body>
 
   <div class="container">
-    <div class="profile-card">
+    <div class="card">
 
-      <!-- TOP SECTION -->
+      <!-- TOP -->
       <div class="top-section">
 
-        <!-- IMAGE -->
+        <!-- FOTO -->
         <div class="image-box">
+
           Upload Foto
+
           <!-- 
-          Untuk memasukkan gambar:
-          Ganti tulisan "Upload Foto" dengan:
-          <img src="Albert foto.jpeg" alt="Albert">
+          Untuk memasukkan foto:
+          Ganti tulisan "Upload Foto" menjadi:
+
+          <img src="foto.jpg" alt="Albert">
+
           -->
+
         </div>
 
-        <!-- PROFILE INFO -->
-        <div class="profile-info">
+        <!-- PROFILE -->
+        <div class="profile">
           <h1>Albert Hugo Liberty</h1>
+
           <p class="subtitle">
-            Math & Physics Enthusiast • Future Aerospace Engineer 🚀
+            Siswa SMA • Pecinta Matematika & Fisika • Future Aerospace Engineer 🚀
           </p>
 
-          <div class="info-list">
+          <div class="info-grid">
+
             <div class="info-item">
               <span>Tanggal Lahir</span>
               20 Februari 2010
@@ -237,32 +259,42 @@
               <span>Instagram</span>
               @albert.lbrty
             </div>
+
           </div>
         </div>
       </div>
 
-      <!-- INTERESTS -->
-      <h2 class="section-title">Interests</h2>
+      <!-- ABOUT -->
+      <h2 class="section-title">Tentang Saya</h2>
+
+      <div class="about">
+        Halo! Saya Albert Hugo Liberty, seorang siswa dari SMA Wardaya yang berasal dari Jakarta.
+        Saya memiliki minat besar di bidang matematika, fisika, dan teknologi. Selain belajar,
+        saya juga senang bermain futsal dan mengikuti berbagai kompetisi akademik maupun olahraga.
+      </div>
+
+      <!-- INTEREST -->
+      <h2 class="section-title">Minat</h2>
 
       <div class="interest-container">
-        <div class="interest">📚 Mathematics</div>
-        <div class="interest">⚛️ Physics</div>
-        <div class="interest">🎨 Drawing</div>
+        <div class="interest">📚 Matematika</div>
+        <div class="interest">⚛️ Fisika</div>
+        <div class="interest">🎨 Menggambar</div>
         <div class="interest">⚽ Futsal</div>
       </div>
 
-      <!-- BOX SECTION -->
+      <!-- BOX -->
       <div class="box-container">
 
         <!-- ACHIEVEMENT -->
         <div class="box">
-          <h3>🏆 Achievements</h3>
+          <h3>🏆 Achievement</h3>
 
           <p>
-            Albert has achieved several accomplishments in both academic and non-academic fields. 
-            He won a school mathematics competition thanks to his strong analytical thinking 
-            and problem-solving abilities. In sports, he also contributed to his futsal team’s 
-            success in interschool tournaments through teamwork, discipline, and consistency.
+            Saya pernah meraih juara dalam lomba matematika tingkat sekolah berkat kemampuan
+            analisis dan problem solving yang saya miliki. Selain itu, saya juga aktif dalam
+            bidang olahraga, khususnya futsal, dan pernah membantu tim sekolah memenangkan
+            turnamen antarsekolah melalui kerja sama tim, disiplin, dan konsistensi latihan.
           </p>
         </div>
 
@@ -270,7 +302,7 @@
         <div class="box">
           <h3>✨ Skills</h3>
 
-          <div class="skills-list">
+          <div class="skills">
             <div class="skill">Problem Solving</div>
             <div class="skill">Critical Thinking</div>
             <div class="skill">Fast Learner</div>
@@ -284,7 +316,7 @@
 
       <!-- QUOTE -->
       <div class="quote">
-        “The future belongs to those who never stop learning and exploring.”
+        “Masa depan dimiliki oleh mereka yang tidak pernah berhenti belajar dan mengeksplorasi.”
       </div>
 
       <!-- FOOTER -->
